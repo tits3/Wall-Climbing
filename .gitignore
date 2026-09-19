@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments and bundled dependencies
+.venv/
+venv/
+env/
+wall_climb/experiments/paper_2d/plot_dependencies/
+
+# Training outputs, caches, and logs
+wall_climb/experiments/
+experiments/
+*.log
+*.tmp
+*.bak
+*.cache
+.mplconfig/
+
+# Model artifacts: retain only the documented final checkpoint
+*.pt
+!wall_climb/checkpoints/
+!wall_climb/checkpoints/full_v38.pt
+
+# Local paper copy and extracted text (cite the public paper instead)
+*.pdf
+paper.txt
+
+# Local delivery archives and machine-specific notes
+*.zip
+RUN_GUIDE_CN.md
+cleanup_record.json
+
+# Generated evaluation output
+wall_climb/evaluation*.json
+wall_climb/evaluation*.csv
+wall_climb/forced*.json
+wall_climb/forced*.csv
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local detailed notes for the larger archived experiment tree
+wall_climb/README_2D.md
